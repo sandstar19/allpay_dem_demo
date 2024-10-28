@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+  text-align: center;
+  overflow: auto; /* Make the container scrollable */
+  max-height: 80vh; /* Set a maximum height */
+}
+
+.predict-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #dfe1e5;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.predictions {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.predictions h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.scores div {
+  width: 45%;
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scores h4 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #4a90e2;
+}
+
+.scores ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.scores li {
+  padding: 3px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.scores li:last-child {
+  border-bottom: none;
+}
+ 
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: left;
+  color: #555;
+}
